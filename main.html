@@ -4,9 +4,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Songwen FanPage</title>
-        <link rel="stylesheet" href="240721_Songwen_info_style.css">
+        <link rel="stylesheet" href="main_style.css">
+        <script src="main_js.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <script src="../240405_Songwen_Project/240721_Sonwen_main_js.js"></script>
+
+        <script>
+            function linkToPage(page){
+                window.location.href = page;
+            }
+        </script>
     </head>>
     <body>
         <header>
@@ -40,7 +46,7 @@
             <div class="header_topband">
                 <div class="topband_content">
                     <div class="band_icon">
-                        <a href="" target="_blank" class="social_icon">
+                        <a href="https://www.facebook.com" target="_blank" class="social_icon">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="https://www.twitter.com" target="_blank" class="social_icon">
@@ -49,7 +55,7 @@
                         <a href="https://www.instagram.com" target="_blank" class="social_icon">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.instagram.com" target="_blank" class="social_icon">
+                        <a href="https://www.youtube.com" target="_blank" class="social_icon">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
@@ -76,35 +82,35 @@
 
         <nav>
             <ul class="navigation-list">
-                <li class="navigation-item"><a href="240721_Songwen_main.html" target="_top">
+                <li class="navigation-item"><a href="main.html" target="_top">
                     <span class="border top"></span>
                     <span class="border bottom"></span>
                     <span class="border left"></span>
                     <span class="border right"></span>
                     Main
                 </a></li>
-                <li class="navigation-item"><a href="240721_Songwen_gallery.html" target="_top">
+                <li class="navigation-item"><a href="gallery.html" target="_top">
                     <span class="border top"></span>
                     <span class="border bottom"></span>
                     <span class="border left"></span>
                     <span class="border right"></span>
                     Gallery
                 </a></li>
-                <li class="navigation-item"><a href="240721_Songwen_info.html">
+                <li class="navigation-item"><a href="info.html">
                     <span class="border top"></span>
                     <span class="border bottom"></span>
                     <span class="border left"></span>
                     <span class="border right"></span>
                     Info
                 </a></li>
-                <li class="navigation-item"><a href="240721_Songwen_filmography.html" target="_top">
+                <li class="navigation-item"><a href="filmography.html" target="_top">
                     <span class="border top"></span>
                     <span class="border bottom"></span>
                     <span class="border left"></span>
                     <span class="border right"></span>
                     Filmography
                 </a></li>
-                <li class="navigation-item"><a href="240721_Songwen_career.html" target="_top">
+                <li class="navigation-item"><a href="career.html" target="_top">
                     <span class="border top"></span>
                     <span class="border bottom"></span>
                     <span class="border left"></span>
@@ -125,17 +131,64 @@
             <div class="content_1">
                 <div class="main_container_1">
                     <div class="poster">
-                        <img src="../240405_Songwen_Project/Image/797.jpg">
+                        <img src="../240405_Songwen_Project/Image/797.jpg" onclick="linkToPage('240721_Songwen_info.html')" class="poster_image">
                     </div>
-                    <div class="content_gap"></div>
                     <div class="textbox">
                         <div class="textframe">
                             <h1>INFO</h1>
-                            <p class="clamp_text">
-                                Zhang Songwen is a Chinese actor and acting coach, best known for starring in the film The Shadow Play (2018), and the television series The Bad Kids (2020) and The Knockout (2023).<br><br>
-                                Zhang Songwen was born in Shaoguan, Guangdong province. After high school, he held various jobs, including working at a printing factory, a food stall, and a beverage factory. From 1994 to 1999, he was employed as a tour guide with the China Travel Service. At the age of 24, Zhang first heard about Beijing Film Academy through a fellow tour guide. To pursue his dream of acting in films, he quit his job, moved to Beijing, and enrolled in the advanced vocational class of the Performance Department at Beijing Film Academy, where he served as class monitor and student union president. After graduating, he worked as a teaching assistant at the academy for eight years.</p>
+                            <p class="clamp_text">Zhang Songwen was born in Shaoguan, Guangdong province. After high school, he held various jobs, including working at a printing factory, a food stall, and a beverage factory. From 1994 to 1999, he was employed as a tour guide with the China Travel Service. At the age of 24, Zhang first heard about Beijing Film Academy through a fellow tour guide. To pursue his dream of acting in films, he quit his job, moved to Beijing, and enrolled in the advanced vocational class of the Performance Department at Beijing Film Academy, where he served as class monitor and student union president. After graduating, he worked as a teaching assistant at the academy for eight years.</p>
                         </div>
-                        
+                        <div class="textbox_button">
+                            <button class="style_button" onclick="linkToPage('240721_Songwen_info.html')">More Info</button>
+                        </div> 
+                    </div>
+                    <div class="content_gap"></div>
+                    <div class="poster">
+                        <img src="../240405_Songwen_Project/Image/unnamed (1).jpg" onclick="linkToPage('240721_Songwen_career.html')" class="poster_image">
+                    </div>
+                    <div class="textbox">
+                        <div class="textframe">
+                            <h1>CAREER</h1>
+                            <p class="clamp_text">Zhang has worked as an acting coach for films and TV series, including the first season of the sitcom Cheng Long Guai Xu (2005), where he also played his first leading role, and the film Love on Credit (2011).
+
+                            In 2008, Zhang left his teaching position at Beijing Film Academy to establish his own acting studio.
+                            
+                            In 2009, Zhang collaborated with director Lou Ye for the first time in Spring Fever (2009), which won the prize for best screenplay at the 62nd Cannes Film Festival. Zhang later starred in the director's The Shadow Play (2018) and Saturday Fiction (2019), both of which received critical acclaim.
+                            
+                            In 2017, Zhang appeared in End of Summer (2017), which won the KNN Award at the 22nd Busan International Film Festival.
+                            
+                            In 2020, Zhang appeared in the web series The Bad Kids, based on the Zi Jinchen's novel, Bad Kid.
+                            
+                            In 2023, Zhang gained widespread popularity for his role as a fishmonger-turned-crime-boss in the TV series The Knockout (2023).</p>
+                        </div>
+                        <div class="textbox_button">
+                            <button class="style_button" onclick="linkToPage('240721_Songwen_career.html')">More Info</button>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="../240405_Songwen_Project/Image/5511.jpg" class="poster_image" onclick="linkToPage('240721_Songwen_filmography.html')">
+                    </div>
+                    <div class="textbox">
+                        <div class="textframe">
+                            <h1>FILMOGRAPHY</h1>
+                            <p>Click the button below to see the specific page.</p>
+                        </div>
+                        <div class="textbox_button">
+                            <button class="style_button" onclick="linkToPage('240721_Songwen_filmography.html')">More Info</button>
+                        </div>
+                    </div>
+                    <div class="content_gap"></div>
+                    <div class="poster">
+                        <img src="../240405_Songwen_Project/Image/bd69198946dc4180a2454c93fde69cce.jpeg" class="poster_image" onclick="linkToPage('240721_Songwen_gallery.html')">
+                    </div>
+                    <div class="textbox">
+                        <div class="textframe">
+                            <h1>GALLERY</h1>
+                            <p>Click the button below to see the specific page.</p>
+                        </div>
+                        <div class="textbox_button">
+                            <button class="style_button" onclick="linkToPage('240721_Songwen_gallery.html')">More Info</button>
+                        </div>
                     </div>
                 </div>
                 

@@ -254,6 +254,7 @@ nav ul li a{
     text-decoration: none;
 }
 
+
 /*--------------------------------------------------  main  ---------------------------------------------------------------------*/
 
 main{
@@ -267,31 +268,54 @@ main{
 
 .main_container_1{
     display: grid;
-    grid-template-columns: 40% 5% 50% 5%;
+    grid-template-columns: 16% 32% 4% 16% 32%;
     height: 100%;
     width: 100%;
 }
 
 .content_1 img{
-    height: 500px;
+    height: 100%;
     width: auto;
     object-fit: cover;
 }
 
 .content_1 .poster{
-    margin-left: 150px;
-    margin-right: 40px;
+    background-color: darkgrey;
+    height: 320px;
     overflow: hidden;
+}
+
+.poster .poster_image{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.poster:hover .poster_image{
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(75%) grayscale(75%);
 }
 
 .content_1 .textbox{
     position: relative;
     margin-left: 25px;
     margin-right: 25px;
+    border: 1px solid rgb(150, 150, 150);
     height: 320px;
     z-index: 1;
 }
 
+.content_1 .textbox::before{
+    content:"";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: url(../240405_Songwen_Project/Image/p288713428033.jpg);
+    opacity: 0.1;
+    background-size: cover;
+    z-index: -1;
+}
 
 .content_1 .textbox .textframe {
     margin-left: 25px;
@@ -307,6 +331,13 @@ main{
     color: white;
 }
 
+.content_1 .textbox .textframe .clamp_text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .content_1 .textbox .textbox_button{
     margin-top: 20px;
@@ -323,6 +354,11 @@ main{
     border-radius: 4px;
 }
 
+.content_1 .textbox .textbox_button .style_button:hover{
+    background-color: #b9a379;
+    cursor: pointer;
+}
+
 h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
@@ -330,8 +366,11 @@ h1{
 
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
 }
+
+
+/*--------------------------------------------------  footer  ---------------------------------------------------------------------*/
 
 footer{
     display: grid;
@@ -347,6 +386,8 @@ footer{
 }
 
 footer ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
     color:white;
     text-decoration: none;
 }

@@ -260,156 +260,78 @@ main{
     background-color: #5E5E5E;
 }
 
-.gallery{
-    margin-left: 180px;
-    margin-right: 180px;  
+.content_1{
+    margin-left: 120px;
+    margin-right: 120px;  
 }
 
-.gallery .gallery_frame{
+.main_container_1{
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-auto-flow: row;
-    gap: 10px;
+    grid-template-columns: 40% 5% 50% 5%;
+    height: 100%;
     width: 100%;
 }
 
-.gallery_container{
-    display: grid;
-    gap: 10px;
+.content_1 img{
+    height: 500px;
+    width: auto;
+    object-fit: cover;
+}
+
+.content_1 .poster{
+    margin-left: 150px;
+    margin-right: 40px;
     overflow: hidden;
 }
 
-.gallery .gallery_frame .gallery_container img{
-    height: 100%;
-    width: 100%;
-    display: block;
-    object-fit: cover;
-    align-items: center;
-    transition: transform 0.3s ease, filter 0.3s ease;
-    
-}
-
-.gallery_img:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    filter: brightness(75%) grayscale(75%);
-}
-
-.filmography .filmography_textbox{
-    color: white;
+.content_1 .textbox{
     position: relative;
-    border: 1px solid rgb(150, 150, 150);
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 320px;
     z-index: 1;
 }
 
-.filmography .filmography_textbox::before{
-    content:"";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    background: url(../240405_Songwen_Project/Image/p288713428033.jpg);
-    opacity: 0.1;
-    background-size: cover;
-    z-index: -1;
+
+.content_1 .textbox .textframe {
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 50%;
+    color: white;
+
 }
 
-.film_description{
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.content_1 .textbox .textbox_button {
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+}
+
+
+.content_1 .textbox .textbox_button{
+    margin-top: 20px;
+}
+
+.content_1 .textbox .textbox_button .style_button{
+    background-color: #cc9933;
+    border:none;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    width: 100px;
+    height: 25px;
+    border-radius: 4px;
 }
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 23px;
-}
-
-h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
 }
-
-.lightbox {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-}
-
-.lightbox_content {
-    margin: auto;
-    display: block;
-    width: auto;
-    height: 100%;
-    overflow: hidden;
-    
-}
-
-.close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    user-select: none;
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/*--------------------------------------------------  footer  ---------------------------------------------------------------------*/
-
 
 footer{
     display: grid;
@@ -421,11 +343,12 @@ footer{
 .footer_navigation{
     margin-left: 80px;
     margin-right: 80px;
-    margin-top: 20px;
     border-top: 1px solid rgb(150, 150, 150);
 }
 
 footer ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
     color:white;
     text-decoration: none;
 }
