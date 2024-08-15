@@ -311,7 +311,7 @@ main{
     right: 0;
     bottom: 0;
     position: absolute;
-    background: url(../240405_Songwen_Project/Image/p288713428033.jpg);
+    background: url(Image/p288713428033.jpg);
     opacity: 0.1;
     background-size: cover;
     z-index: -1;
