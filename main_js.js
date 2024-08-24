@@ -6,13 +6,23 @@ document.addEventListener(
         const images = document.querySelectorAll('.header_slider img');
         let index = 0 ;
 
-        const nextSlide = () =>{
+        const getSlideWidth = () => {
+            return images[index].clientWidth; 
+        };
+    
+        const nextSlide = () => {
+            const slideWidth = getSlideWidth(); 
             index++;
-            if(index >= images.length){
+            if (index >= images.length) {
                 index = 0;
             }
-            slides.style.transform = `translateX(${-index*20}%)`;
+            slides.style.transform = `translateX(${-index * slideWidth}px)`;
         };
-
+    
         setInterval(nextSlide, 3000);
+
+        window.addEventListener('resize', () => {
+            const slideWidth = getSlideWidth();
+            slides.style.transform = `translateX(${-index*slideWidth}%)`;
+        });
     });

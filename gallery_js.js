@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
 
     const openLightbox = (index) => {
-        lightbox.style.display = 'block';
+        lightbox.style.display = 'grid';
         lightboxImg.src = galleryItems[index].src;
         currentIndex = index;
     };
