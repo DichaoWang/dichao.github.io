@@ -178,7 +178,8 @@ header{
     .band_title{
         position:absolute;
         top: 120px;
-        right: -200px;
+        right: 0px;
+        width: 60px;
     }
 
     .band_title .band_title_text{
@@ -375,6 +376,12 @@ main{
     background-color: #5E5E5E;
 }
 
+@media (max-width:600px) {
+    main{
+        height: 1000px;
+    }
+}
+
 .content_1{
     margin-left: 120px;
     margin-right: 120px;  
@@ -479,6 +486,7 @@ footer{
     color: white;
     grid-row-gap: 0px;
 }
+
 
 .footer_navigation{
    padding-top: 10px;

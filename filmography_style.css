@@ -179,7 +179,8 @@ header{
     .band_title{
         position:absolute;
         top: 120px;
-        right: -200px;
+        right: 0px;
+        width: 60px;
     }
 
     .band_title .band_title_text{
@@ -445,6 +446,8 @@ main{
 .filmography_poster{
     height: 320px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .filmography_poster img{

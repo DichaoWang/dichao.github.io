@@ -178,7 +178,8 @@ header{
     .band_title{
         position:absolute;
         top: 120px;
-        right: -200px;
+        right: 0px;
+        width: 60px;
     }
 
     .band_title .band_title_text{
@@ -381,6 +382,10 @@ main{
 }
 
 @media (max-width:600px) {
+    main{
+        height: 800px;
+    }
+
     .content_1{
         margin-left: 20px;
         margin-right: 20px;
@@ -440,6 +445,7 @@ main{
         margin-top: 20px;
         margin-left: 20px;
         margin-right: 20px;
+        height: auto;
     }
 }
 

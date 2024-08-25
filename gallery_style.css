@@ -179,7 +179,8 @@ header{
     .band_title{
         position:absolute;
         top: 120px;
-        right: -200px;
+        right: 0px;
+        width: 60px;
     }
 
     .band_title .band_title_text{
@@ -398,12 +399,25 @@ main{
     .gallery .gallery_frame{
         grid-template-columns: calc(50% - 2.5px) calc(50% - 2.5px);
     }
+    .column-1{
+        align-self: start;
+    }
+    .column-2{
+        align-self: start;
+    }
 }
 
 .gallery_container{
     display: grid;
     gap: 10px;
     overflow: hidden;
+}
+
+@media (max-width:600px) {
+    .gallery_container{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .gallery .gallery_frame .gallery_container img{
@@ -415,54 +429,18 @@ main{
     transition: transform 0.3s ease, filter 0.3s ease;  
 }
 
+@media (max-width:600px) {
+    .gallery .gallery_frame .gallery_container img{
+        height:auto;
+    }
+}
+
 .gallery_img:hover {
     cursor: pointer;
     transform: scale(1.1);
     filter: brightness(75%) grayscale(75%);
 }
 
-.filmography .filmography_textbox{
-    color: white;
-    position: relative;
-    border: 1px solid rgb(150, 150, 150);
-    z-index: 1;
-}
-
-.filmography .filmography_textbox::before{
-    content:"";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    background: url(../240405_Songwen_Project/Image/p288713428033.jpg);
-    opacity: 0.1;
-    background-size: cover;
-    z-index: -1;
-}
-
-.film_description{
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 23px;
-}
-
-h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-
-p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
-}
 
 /*--------------------------------------------------  light box ---------------------------------------------------------------------*/
 .lightbox {
@@ -483,9 +461,7 @@ p{
 @media (max-width:600px) {
     .lightbox{
         position: fixed;
-        padding-top: 20px;
-        max-width: 100%;
-        max-height: 100%;
+        padding-top: 5px;
         width:100vw;
         height: 100vh;
         grid-template-columns: 15% 70% 15%;
@@ -510,7 +486,7 @@ p{
 
     .lightbox_content{
         position: relative;
-        top: 20%;
+        top: 0;
         margin: 2px;
         width: 100%;
         height: auto;
